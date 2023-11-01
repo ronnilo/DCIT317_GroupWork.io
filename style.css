@@ -1,6 +1,7 @@
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;
+
 }
 
 h1 {
@@ -240,8 +241,34 @@ section {
   text-align: center;
 }
 
-/* Card */
 
+
+/*Card1 on homepage*/ 
+/* card1 resize and center*/
+.card1{
+  margin-top: 20px;
+  margin-left: 250px;
+  margin-right: 250px;
+  margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.card1-image{
+  transition: 0.4s;
+}
+.card1-image:hover{
+  box-shadow: 0 10px 6px -6px #777;
+}
+.card1 .card1-description {
+  padding: 0 8px;
+  text-align: justify;
+  margin-right: 10px;
+}
+
+
+
+/* CARD */
 .card-image {
   transition: 0.4s;
 }
@@ -252,6 +279,7 @@ section {
 
 .card .card-description {
   padding: 0 8px;
+  text-align: justify ;
 }
 
 .card-meta-blogpost{
@@ -265,7 +293,90 @@ section {
   color:#333;
 }
 
-/* Button Read more */
+/*Readmore for homepage New*/
+#check{
+  display: none;
+}
+#check:checked ~ .content{
+  display: block;
+}
+#check:checked ~ label{
+  display: none;
+}
+
+.content{
+  display: none;
+}
+
+label{
+ display: inline-block;
+ cursor: pointer;
+ color: white;
+ background-color: orangered;
+ padding: 3px 13px;
+ border-radius: 3px;
+ margin-top: 5px;
+
+
+}
+
+#check1 {
+  display: none;
+}
+
+#check1:checked ~ .content1 {
+  display: block;
+}
+
+#check1:checked~label {
+  display: none;
+}
+
+.content1 {
+  display: none;
+}
+
+label {
+  display: inline-block;
+  cursor: pointer;
+  color: white;
+  background-color: orangered;
+  padding: 3px 13px;
+  border-radius: 3px;
+  margin-top: 5px;
+
+
+}
+
+#check2 {
+  display: none;
+}
+
+#check2:checked ~ .content2 {
+  display: block;
+}
+
+#check2:checked ~ label {
+  display: none;
+}
+
+.content2 {
+  display: none;
+}
+
+label {
+  display: inline-block;
+  cursor: pointer;
+  color: white;
+  background-color: orangered;
+  padding: 3px 13px;
+  border-radius: 3px;
+  margin-top: 5px;
+  margin-bottom: 50px;
+}
+
+
+/* Button Read more 
 
 .btn-readmore {
   padding: 8px 24px;
@@ -284,7 +395,7 @@ section {
   text-decoration: none;
   padding: 8px 64px 8px 24px;
   color: white;
-}
+}*/
 
 /* Footer */
 
@@ -293,6 +404,8 @@ footer {
   padding: 8px;
   color: #eee;
   display: flex;
+  margin: 0px;
+
 }
 
 footer a {
