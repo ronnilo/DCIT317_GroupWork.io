@@ -661,32 +661,37 @@ footer #social-media-footer ul li:hover a .fa-github {
   }
 }
 
-.testimonials {
+
+.coursedetails {
   display: flex;
-  flex-direction: row; 
-  justify-content: space-between; 
+  flex-direction: wrap; /* Displays testimonials horizontally */
+  justify-content: space-around; /* Creates space between testimonials */
 }
 
-.testimonial {
-  width: 30%;
+.coursedetail{
+  width: 30%; /* Adjust the width as needed */
   text-align: center;
-  padding: 20px;
+  box-sizing: border-box;
+  padding: 0 10px;
+  margin-bottom: 20px;
   border: none;
 }
 
-.testimonial-content {
+.coursedetails-content {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.testimonial-image img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%; 
+.course-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
 }
 
 .customer-name {
   font-weight: bold;
 }
+
 
